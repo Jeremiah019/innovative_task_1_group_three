@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:innovative_task_1_group_three/tab_one.dart';
 import 'package:innovative_task_1_group_three/users.dart';
 
 class Home extends StatefulWidget {
@@ -67,7 +68,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
   @override
   void initState(){
     tabController = TabController(
-        length: 6,
+        length: 1,
         vsync: this
     );
     super.initState();
@@ -76,9 +77,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.blue,
+          toolbarHeight: 60,
           leading: Container(
-            padding: const EdgeInsets.all(0.0),
-            alignment: Alignment.centerRight,
+              padding: const EdgeInsets.all(0.0),
+              alignment: Alignment.centerRight,
+              child: const CircleAvatar(
+                radius: 20,
+                backgroundImage: AssetImage('james.png'),
+              )
           ),
           title: Row(
               children: const [
@@ -119,6 +126,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       body: TabBarView(
         controller: tabController,
         children: [
+          TabOne(
+              users: mae
+          ),
         ],
       ),
     );
