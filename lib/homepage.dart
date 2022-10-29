@@ -116,6 +116,46 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     ),
 
   ];
+  
+  List angelica = [
+    User(
+      name: 'Angelica Lazarito',
+      relationship: 'Me',
+      age: 21,
+      birthday: 'August 18, 2001',
+      occupation: 'Student Programmer',
+      icon: 'assets/zerl.jpeg',
+    ),
+    User(name: 'Jan Lazarito',
+      relationship: 'Father',
+      age: 43,
+      birthday: 'January 4, 1979',
+      occupation: 'Driver',
+      icon: 'assets/oliver.png',
+    ),
+    User(name: 'Hazel Lazarito',
+      relationship: 'Mother',
+      age: 42,
+      birthday: 'May 16, 1980',
+      occupation: 'Accountant',
+      icon: 'assets/hazel.jpeg',
+    ),
+    User(name: 'Jairah Lazarito',
+      relationship: 'Younger Sister',
+      age: 19,
+      birthday: 'November 19, 2003',
+      occupation: 'CSR',
+      icon: 'assets/jairah.jpeg',
+    ),
+    User(name: 'Zhoie Lazarito',
+      relationship: 'Younger Sister',
+      age: 6,
+      birthday: 'July 8, 2016',
+      occupation: 'Elementary Pupil',
+      icon: 'assets/zhoie.jpeg',
+    ),
+  ];
+  
 
   @override
   void initState(){
@@ -177,6 +217,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     'Jeremiah Larry King Ungsod',
                   )
               ),
+              Tab(
+              child: Text(
+                'Angelica Zerl Lazarito',
+              )
+            ),
             ],
           ),
         ),
@@ -189,6 +234,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           TabOne(
               users: jeremiah
           ),
+          TabOne(
+              users: angelica
+          ),
+
         ],
       ),
     );
