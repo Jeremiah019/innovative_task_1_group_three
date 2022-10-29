@@ -65,6 +65,58 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     ),
   ];
 
+  List jeremiah = [
+    User(
+      name: 'Jeremiah Larry King Ungsod',
+      relationship: 'Me',
+      age: 20,
+      birthday: 'January 19, 2002',
+      occupation: 'Student Programmer',
+      icon: 'assets/jeremiah.jpg',
+    ),
+    User(
+      name: 'Helen Ompoc',
+      relationship: 'Mother',
+      age: 20,
+      birthday: 'July 10, 1977',
+      occupation: 'Catering Assistant',
+      icon: 'assets/helen.jpg',
+    ),
+    User(
+      name: 'Christoper Ompoc',
+      relationship: 'Father',
+      age: 20,
+      birthday: 'June 16, 1976',
+      occupation: 'Welder',
+      icon: 'assets/chris.jpg',
+  ),
+    User(
+      name: 'Prince Ungsod',
+      relationship: 'Second Brother',
+      age: 20,
+      birthday: 'January 1, 2002',
+      occupation: 'Student Programmer',
+      icon: 'assets/prince.jpg',
+    ),
+    User(
+      name: 'James Ompoc',
+      relationship: 'Third Brother',
+      age: 20,
+      birthday: 'January 1, 2002',
+      occupation: 'Student Programmer',
+      icon: 'assets/james.jpg',
+    ),
+    User(
+      name: 'Cyrus Ompoc',
+      relationship: 'Youngest Brother',
+      age: 20,
+      birthday: 'January 1, 2002',
+      occupation: 'Student Programmer',
+      icon: 'assets/cyrus.jpg',
+    ),
+
+  ];
+
   @override
   void initState(){
     tabController = TabController(
@@ -120,6 +172,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     'Princess Mae Salazar',
                   )
               ),
+              Tab(
+                  child: Text(
+                    'Jeremiah Larry King Ungsod',
+                  )
+              ),
             ],
           ),
         ),
@@ -128,6 +185,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
         children: [
           TabOne(
               users: mae
+          ),
+          TabOne(
+              users: jeremiah
           ),
         ],
       ),
