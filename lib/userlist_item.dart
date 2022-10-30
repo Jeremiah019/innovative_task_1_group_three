@@ -27,6 +27,12 @@ class UserListItem extends StatelessWidget {
               title: Text(item.name ?? 'Not a member'),
               subtitle: Text(item.relationship ?? ''),
               trailing: const Icon(Icons.navigate_next),
+              onTap: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => PageTwo(info: item)),
+                );
+              },
             ),
         ]
     );

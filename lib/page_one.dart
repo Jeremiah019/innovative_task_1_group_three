@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:innovative_task_1_group_three/userlist_item.dart';
 
 class PageOne extends StatelessWidget {
 
@@ -12,8 +13,8 @@ class PageOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        ...family.map((user) => ListTile(
-          title: Text(user.name),
+        ...family.map((user) => UserListItem(
+          item: user,
         )).toList()
       ],
     );
