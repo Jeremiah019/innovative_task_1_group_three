@@ -232,13 +232,44 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       occupation: 'Student',
       icon: 'assets/rg_dom.jpg',
     ),
+     List James = [
+      User(
+        name: 'Ralph D. Tantoy',
+        relationship: 'Father',
+        age: 42,
+        birthday: 'July 1, 1981',
+        occupation: 'Security Guard',
+        icon: 'assets/Tantoy_f.jpg'
+      ),
+      User(name: 'Haide A. Tantoy',
+        relationship: 'Mother',
+        age: 41,
+        birthday: 'December 9, 1981',
+        occupation: 'Housewife',
+        icon: 'assets/Tantoy_m.jpg'
+      ),
+      User(name: 'James Ryan A. Tantoy',
+        relationship: 'Older Brother',
+        age: 21,
+        birthday: 'August 23, 2001',
+        occupation: 'Student',
+        icon: 'assets/Tantoy.jpg'
+
+      ),
+      User(name: 'Ayiah Amber A. Tantoy',
+        relationship: 'Yougest Sister',
+        age: 4,
+        birthday: 'September 12, 2018',
+        occupation: 'Student',
+        icon: 'assets/Tantoy_S.jpg'
+      ),
   ];
   
   
   @override
   void initState(){
     tabController = TabController(
-        length: 5,
+        length: 6,
         vsync: this
     );
     super.initState();
@@ -310,6 +341,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     'RG Christian Cagampang',
                   )
               ),
+              Tab(
+                  child: Text(
+                    'James Ryan A. Tantoy',
+                  )
+              ),
             ],
           ),
         ),
@@ -330,6 +366,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           ),
           TabOne(
               users: rg
+          ),
+          TabOne(
+            users: James
           ),
         ],
       ),
