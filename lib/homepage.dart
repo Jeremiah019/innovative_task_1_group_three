@@ -264,10 +264,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                   )
               ),
               Tab(
-              child: Text(
-                'Angelica Zerl Lazarito',
-              )
-            ),
+                  child: Text(
+                    'Angelica Zerl Lazarito',
+                  )
+              ),
               Tab(
                   child: Text(
                     'Joshua Cabugnason',
@@ -286,8 +286,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
               users: jeremiah
           ),
           TabOne(
-              users: angelica
-          ),
+              users: angelica
+          ),
           TabOne(
           users: joshua
           ),
