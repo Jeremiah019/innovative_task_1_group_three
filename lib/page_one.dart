@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class TabOne extends StatelessWidget {
+class PageOne extends StatelessWidget {
 
-  final List users;
+  final List family;
 
-  const TabOne({
-    required this.users,
+  const PageOne({
+    required this.family,
     Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        ...users.map((user) => ListTile(
+        ...family.map((user) => ListTile(
           title: Text(user.name),
         )).toList()
       ],
