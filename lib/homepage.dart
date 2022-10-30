@@ -232,7 +232,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       occupation: 'Student',
       icon: 'assets/rg_dom.jpg',
     ),
-     List James = [
+  ];
+  List james = [
       User(
         name: 'Ralph D. Tantoy',
         relationship: 'Father',
@@ -241,27 +242,29 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
         occupation: 'Security Guard',
         icon: 'assets/Tantoy_f.jpg'
       ),
-      User(name: 'Haide A. Tantoy',
-        relationship: 'Mother',
-        age: 41,
-        birthday: 'December 9, 1981',
-        occupation: 'Housewife',
-        icon: 'assets/Tantoy_m.jpg'
+      User(
+          name: 'Haide A. Tantoy',
+          relationship: 'Mother',
+          age: 41,
+          birthday: 'December 9, 1981',
+          occupation: 'Housewife',
+          icon: 'assets/Tantoy_m.jpg'
       ),
-      User(name: 'James Ryan A. Tantoy',
-        relationship: 'Older Brother',
-        age: 21,
-        birthday: 'August 23, 2001',
-        occupation: 'Student',
-        icon: 'assets/Tantoy.jpg'
-
+      User(
+          name: 'James Ryan A. Tantoy',
+          relationship: 'Older Brother',
+          age: 21,
+          birthday: 'August 23, 2001',
+          occupation: 'Student',
+          icon: 'assets/Tantoy.jpg'
       ),
-      User(name: 'Ayiah Amber A. Tantoy',
-        relationship: 'Yougest Sister',
-        age: 4,
-        birthday: 'September 12, 2018',
-        occupation: 'Student',
-        icon: 'assets/Tantoy_S.jpg'
+      User(
+          name: 'Ayiah Amber A. Tantoy',
+          relationship: 'Yougest Sister',
+          age: 4,
+          birthday: 'September 12, 2018',
+          occupation: 'Student',
+          icon: 'assets/Tantoy_S.jpg'
       ),
   ];
 
@@ -367,8 +370,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           PageOne(
               family: rg
           ),
-          TabOne(
-            users: James
+          PageOne(
+              family: james
           ),
         ],
       ),
