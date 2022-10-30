@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:innovative_task_1_group_three/tab_one.dart';
+import 'package:innovative_task_1_group_three/page_one.dart';
 import 'package:innovative_task_1_group_three/users.dart';
 
 class Home extends StatefulWidget {
@@ -201,7 +201,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       icon: 'assets/inday.jpg',
     ),
   ];
-  
+
   List rg = [
     User(
       name: 'RG Christian Cagampang',
@@ -233,8 +233,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       icon: 'assets/rg_dom.jpg',
     ),
   ];
-  
-  
+
+
   @override
   void initState(){
     tabController = TabController(
@@ -316,20 +316,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       body: TabBarView(
         controller: tabController,
         children: [
-          TabOne(
-              users: mae
+          PageOne(
+              family: mae
           ),
-          TabOne(
-              users: jeremiah
+          PageOne(
+              family: jeremiah
           ),
-          TabOne(
-              users: angelica
+          PageOne(
+              family: angelica
           ),
-          TabOne(
-              users: joshua
+          PageOne(
+              family: joshua
           ),
-          TabOne(
-              users: rg
+          PageOne(
+              family: rg
           ),
         ],
       ),
