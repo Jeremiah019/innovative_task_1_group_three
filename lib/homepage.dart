@@ -202,7 +202,39 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     ),
   ];
   
-
+  List rg = [
+    User(
+      name: 'RG Christian Cagampang',
+      relationship: 'Me',
+      age: 20,
+      birthday: 'May 01, 2002',
+      occupation: 'Student',
+      icon: 'assets/rg_chris.jpg',
+    ),
+    User(name: 'Roy Cagampang',
+      relationship: 'Father',
+      age: 50,
+      birthday: 'October 12, 1972',
+      occupation: 'Deceased',
+      icon: 'assets/roy.jpg',
+    ),
+    User(name: 'Gemma Cagampang',
+      relationship: 'Mother',
+      age: 50,
+      birthday: 'April 11, 1972',
+      occupation: 'Housewife',
+      icon: 'assets/gemma.jpg',
+    ),
+    User(name: 'RG Dominique Cagampang',
+      relationship: 'Older Brother',
+      age: 22,
+      birthday: 'August 13, 2000',
+      occupation: 'Student',
+      icon: 'assets/rg_dom.jpg',
+    ),
+  ];
+  
+  
   @override
   void initState(){
     tabController = TabController(
@@ -273,6 +305,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     'Joshua Cabugnason',
                   )
               ),
+              Tab(
+                  child: Text(
+                    'RG Christian Cagampang',
+                  )
+              ),
             ],
           ),
         ),
@@ -291,7 +328,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           TabOne(
           users: joshua
           ),
-
+          TabOne(
+              users: rg
+          ),
         ],
       ),
     );

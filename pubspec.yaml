@@ -86,9 +86,10 @@ flutter:
     - assets/kuya.jpg
     - assets/dodong.jpg
     - assets/inday.jpg
- 
-
-
+    - assets/roy.jpg
+    - assets/gemma.jpg
+    - assets/rg_dom.jpg
+    - assets/rg_chris.jpg
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
