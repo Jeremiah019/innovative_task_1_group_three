@@ -155,52 +155,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       icon: 'assets/zhoie.jpeg',
     ),
   ];
-
-  List joshua = [
-    User(
-      name: 'Joshua Cabugnason',
-      relationship: 'Me',
-      age: 21,
-      birthday: 'May 03, 2001',
-      occupation: 'Student Programmer',
-      icon: 'assets/wawa.jpg',
-    ),
-    User(name: 'Jose Cabugnason',
-      relationship: 'Father',
-      age: 53,
-      birthday: 'April 22, 1969',
-      occupation: 'Driver',
-      icon: 'assets/papa.jpg',
-    ),
-    User(name: 'Rutchel Cabugnason',
-      relationship: 'Mother',
-      age: 49,
-      birthday: 'December 03, 1973',
-      occupation: 'Housewife',
-      icon: 'assets/mama.jpg',
-    ),
-    User(name: 'Jazer Cabugnason',
-      relationship: 'Older Brother',
-      age: 23,
-      birthday: 'September 12, 1999',
-      occupation: 'Student Criminology',
-      icon: 'assets/kuya.jpg',
-    ),
-    User(name: 'Justine Cabugnason',
-      relationship: 'Younger Brother',
-      age: 13,
-      birthday: 'April 04, 2009',
-      occupation: 'High School Student',
-      icon: 'assets/dodong.jpg',
-    ),
-    User(name: 'Rejana Jean Cabugnason',
-      relationship: 'Younger Sister',
-      age: 7,
-      birthday: 'February 13, 2015',
-      occupation: 'Elementary Student',
-      icon: 'assets/inday.jpg',
-    ),
-  ];
   
 
   @override
@@ -268,11 +222,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                 'Angelica Zerl Lazarito',
               )
             ),
-              Tab(
-                  child: Text(
-                    'Joshua Cabugnason',
-                  )
-              ),
             ],
           ),
         ),
@@ -288,9 +237,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           TabOne(
               users: angelica
           ),
-          TabOne(
-          users: joshua
-          ),
 
         ],
       ),
