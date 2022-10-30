@@ -310,40 +310,47 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     super.initState();
   }
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          toolbarHeight: 60,
-          leading: Container(
-              padding: const EdgeInsets.all(0.0),
-              alignment: Alignment.centerRight,
-              child: const CircleAvatar(
-                radius: 20,
-                backgroundImage: AssetImage('james.png'),
-              )
-          ),
-          title: Row(
-              children: const [
-                Expanded(
-                    child: ListTile(
-                        contentPadding: EdgeInsets.zero,
-                        title: Text(
-                          'Innovative Task #',
-                          style: TextStyle(
-                              fontSize: 20,
-                              ),
-                        ),
-                        subtitle: Text(
-                          'Group 3',
-                          style: TextStyle(
-                            fontSize: 15,
-                          ),
-                        ),
-                    )
-                )
-              ],
-          ),
+     Widget build(BuildContext context) {
+       Size size = MediaQuery.of(context).size;
+       return Scaffold(
+         appBar: AppBar(
+           backgroundColor: const Color(0xFF1C2541),
+           shadowColor: Colors.white,
+           toolbarHeight: 60,
+           // leadingWidth: 50
+           leading: Container(
+             padding: const EdgeInsets.all(0.0),
+               alignment: Alignment.centerRight,
+               child: const CircleAvatar(
+                 radius: 20,
+                 backgroundImage: AssetImage('assets/james.png'),
+               )
+           ),
+           leadingWidth: 65,
+           title: Row(
+             children: const [
+               Expanded(
+                   child: ListTile(
+                     contentPadding: EdgeInsets.zero,
+                       title: Text(
+                         'Innovative Task #',
+                         style: TextStyle(
+                             fontSize: 20,
+                             fontWeight: FontWeight.bold,
+                             color: Colors.white
+                         ),
+                       ),
+                       subtitle: Text(
+                         'Group 3',
+                         style: TextStyle(
+                             fontSize: 15,
+                             color: Colors.white
+                         ),
+                       ),
+                     )
+                 )
+             ],
+           ),
           bottom: TabBar(
             isScrollable: true,
             controller: tabController,
