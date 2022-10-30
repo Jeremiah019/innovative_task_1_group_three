@@ -268,6 +268,38 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       ),
   ];
 
+  List jesse = [
+    User(
+      name: 'Jesse james A. Justalero',
+      relationship: 'Me',
+      age: 20,
+      birthday: 'December 17,2001',
+      occupation: 'Student Programmer',
+      icon: 'assets/Jesse.png',
+    ),
+    User(name: 'Gwyneth Rose A. Justalero',
+      relationship: 'Younger Sister',
+      age: 17,
+      birthday: 'August 18,2006',
+      occupation: 'Student',
+      icon: 'assets/gwyn.png',
+    ),
+    User(name: 'Ulysses B. Justalero',
+      relationship: 'Father',
+      age: 57,
+      birthday: 'January 14, 1965',
+      occupation: 'Unemployed',
+      icon: 'assets/Ulysses.png',
+    ),
+    User(name: 'Annabel A. Justalero',
+      relationship: 'Mother',
+      age: 40,
+      birthday: 'January 1, 2002',
+      occupation: 'Teacher',
+      icon: 'assets/Annabel.png',
+    ),
+  ];
+
 
   @override
   void initState(){
@@ -349,6 +381,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     'James Ryan A. Tantoy',
                   )
               ),
+              Tab(
+                  child: Text(
+                    'Jesse James A. Justalero',
+                  )
+              ),
             ],
           ),
         ),
@@ -373,6 +410,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           PageOne(
               family: james
           ),
+          PageOne(
+              family: jesse,
+          )
         ],
       ),
     );
