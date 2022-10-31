@@ -33,7 +33,8 @@ class UserListItem extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context, MaterialPageRoute(
-                    builder: (context) => PageTwo(info: item)),
+                    builder: (context) => PageTwo(info: item)
+                  ),
                 );
               },
             ),

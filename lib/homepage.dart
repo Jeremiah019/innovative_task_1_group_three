@@ -418,7 +418,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                  family: james
              ),
              PageOne(
-               family: jesse,
+                 family: jesse,
              ),
            ],
          ),
