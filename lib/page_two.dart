@@ -29,7 +29,7 @@ class PageTwo extends StatelessWidget {
               title: Text('Name : ${info.age}'),
             ),
           ],
-        )
+        ),
     );
   }
 }

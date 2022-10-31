@@ -396,32 +396,33 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
             ],
           ),
         ),
-      body: TabBarView(
-        controller: tabController,
-        children: [
-          PageOne(
-              family: mae
-          ),
-          PageOne(
-              family: jeremiah
-          ),
-          PageOne(
-              family: angelica
-          ),
-          PageOne(
-              family: joshua
-          ),
-          PageOne(
-              family: rg
-          ),
-          PageOne(
-              family: james
-          ),
-          PageOne(
-              family: jesse,
-          )
-        ],
-      ),
+         body: TabBarView(
+           controller: tabController,
+           children: [
+             PageOne(
+                 family: mae
+             ),
+             PageOne(
+                 family: jeremiah
+             ),
+             PageOne(
+                 family: angelica
+             ),
+             PageOne(
+                 family: joshua
+             ),
+             PageOne(
+                 family: rg
+             ),
+             PageOne(
+                 family: james
+             ),
+             PageOne(
+               family: jesse,
+             ),
+           ],
+         ),
+         backgroundColor: const Color(0xFF1C2541),
     );
   }
 }

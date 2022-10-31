@@ -23,6 +23,9 @@ class UserListItem extends StatelessWidget {
             height: 15,
           ),
             ListTile(
+              tileColor: const Color(0xFF3a506b),
+              iconColor: Colors.white,
+              textColor: Colors.white,
               leading: CircleAvatar(backgroundImage: AssetImage(item.icon)),
               title: Text(item.name ?? 'Not a member'),
               subtitle: Text(item.relationship ?? ''),
