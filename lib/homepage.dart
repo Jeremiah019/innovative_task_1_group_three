@@ -351,12 +351,23 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                  )
              ],
            ),
-          bottom: TabBar(
-            isScrollable: true,
-            controller: tabController,
-            labelPadding: const EdgeInsets.symmetric(
-                horizontal: 10.0
+        bottom: TabBar(
+          isScrollable: true,
+          controller: tabController,
+          labelPadding: const EdgeInsets.symmetric(
+              horizontal: 10.0
             ),
+          indicator: const ShapeDecoration(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10)
+                  )
+              ),
+              color: Color(0xFF3a506b),
+          ),
+          labelColor: Colors.white, 
+          unselectedLabelColor: const Color(0xFF3a506b),
             tabs: const [
               Tab(
                   child: Text(
