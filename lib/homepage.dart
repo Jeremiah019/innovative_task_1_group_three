@@ -311,7 +311,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
   }
   @override
      Widget build(BuildContext context) {
-       Size size = MediaQuery.of(context).size;
        return Scaffold(
          appBar: AppBar(
            backgroundColor: const Color(0xFF1C2541),
@@ -323,7 +322,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                alignment: Alignment.centerRight,
                child: const CircleAvatar(
                  radius: 20,
-                 backgroundImage: AssetImage('assets/james.png'),
+                 backgroundImage: AssetImage('assets/logo.png'),
                )
            ),
            leadingWidth: 65,

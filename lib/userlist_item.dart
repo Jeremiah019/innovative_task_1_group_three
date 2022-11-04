@@ -1,4 +1,5 @@
 import 'package:innovative_task_1_group_three/page_two.dart';
+import 'package:innovative_task_1_group_three/profile%20icon_anim.dart';
 import 'package:innovative_task_1_group_three/users.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +54,11 @@ class UserListItem extends StatelessWidget {
               },
             ),
         ),
+<<<<<<< Updated upstream
         ]
+=======
+        ],
+>>>>>>> Stashed changes
     );
   }
 }
