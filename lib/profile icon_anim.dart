@@ -29,7 +29,6 @@ class _LoadingIconState extends State<LoadingIcon> {
         // margin: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 10.0),
         padding: const EdgeInsets.all(15.0),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0),
           shape: BoxShape.rectangle,
           color: Colors.white.withOpacity(0.5),
           boxShadow: const <BoxShadow>[
@@ -41,15 +40,12 @@ class _LoadingIconState extends State<LoadingIcon> {
           ],
         ),
         child: Container(
+          // margin: const EdgeInsets.symmetric(horizontal: 0.60),
           decoration: const BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle,
-              image: DecorationImage(image: AssetImage("assets/logo.png"))
+              image: DecorationImage(image: AssetImage('assets/james.png'))
             ),
-          // child: const CircleAvatar(
-          //   radius: 100,
-          //   backgroundImage: AssetImage('assets/logo.png'),
-          // ),
         )
     );
   }

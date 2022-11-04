@@ -322,7 +322,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                alignment: Alignment.centerRight,
                child: const CircleAvatar(
                  radius: 20,
-                 backgroundImage: AssetImage('assets/logo.png'),
+                 backgroundImage: AssetImage('assets/james.png'),
                )
            ),
            leadingWidth: 65,
