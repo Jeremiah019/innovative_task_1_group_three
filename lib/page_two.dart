@@ -9,7 +9,9 @@ class PageTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: const Color(0xFF1C2541),
           title: Text(info.name ?? 'Not a family'),
+          shadowColor: Colors.white,
         ),
         body: ListView(
           children: <Widget>[
@@ -33,10 +35,9 @@ class PageTwo extends StatelessWidget {
                       )
                     ],
                   ),
-                  // padding: const EdgeInsets.only(top: 5),
                   child: CircleAvatar(
                     radius: 100,
-                    backgroundImage: AssetImage(items.icon),
+                    backgroundImage: AssetImage(info.icon),
                   ),
                 )
               ],
@@ -45,9 +46,6 @@ class PageTwo extends StatelessWidget {
               height: 20,
             ),
             ListTile(
-              // shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(30)
-              // ),
               tileColor: const Color(0xFF1C2541),
               iconColor: Colors.white,
               textColor: Colors.white,
@@ -57,8 +55,7 @@ class PageTwo extends StatelessWidget {
                 children: [
                   const Expanded(
                     flex: 1,
-                    child: Text(
-                      "",
+                    child: Text("",
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
@@ -67,8 +64,7 @@ class PageTwo extends StatelessWidget {
                   ),
                   const Expanded(
                     flex: 4,
-                    child: Text(
-                        'Name',
+                    child: Text('Name',
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
@@ -77,8 +73,7 @@ class PageTwo extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 9,
-                    child: Text(
-                        ':  ${items.name}',
+                    child: Text(':  ${info.name}',
                       style: const TextStyle(
                         fontSize: 15,
                       ),
@@ -87,20 +82,14 @@ class PageTwo extends StatelessWidget {
                 ],
               )
            ),
-            // const SizedBox(
-            //   height: 10,
-            // ),
             const Divider(
               height: 20,
               thickness: 1,
               indent: 20,
               endIndent: 20,
-              color: const Color(0xff3a506b),
+              color: Color(0xff3a506b),
             ),
             ListTile(
-              // shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(30)
-              // ),
                 tileColor: const Color(0xFF1C2541),
                 iconColor: Colors.white,
                 textColor: Colors.white,
@@ -110,8 +99,7 @@ class PageTwo extends StatelessWidget {
                   children: [
                     const Expanded(
                       flex: 1,
-                      child: Text(
-                        "",
+                      child: Text("",
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
@@ -120,8 +108,7 @@ class PageTwo extends StatelessWidget {
                     ),
                     const Expanded(
                       flex: 4,
-                      child: Text(
-                        'Relationship',
+                      child: Text('Relationship',
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
@@ -130,30 +117,23 @@ class PageTwo extends StatelessWidget {
                     ),
                     Expanded(
                       flex: 9,
-                      child: Text(
-                        ':  ${items.relationship}',
+                      child: Text(':  ${info.relationship}',
                         style: const TextStyle(
                           fontSize: 15,
                         ),
                       ),
                     ),
                   ],
-                )
+                ),
             ),
-            // const SizedBox(
-            //   height: 10,
-            // ),
            const Divider(
               height: 20,
               thickness: 1,
               indent: 20,
               endIndent: 20,
-              color: const Color(0xff3a506b),
+              color: Color(0xff3a506b),
             ),
             ListTile(
-              // shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(30)
-              // ),
                 tileColor: const Color(0xFF1C2541),
                 iconColor: Colors.white,
                 textColor: Colors.white,
@@ -163,8 +143,7 @@ class PageTwo extends StatelessWidget {
                   children: [
                     const Expanded(
                       flex: 1,
-                      child: Text(
-                        "",
+                      child: Text("",
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
@@ -173,8 +152,7 @@ class PageTwo extends StatelessWidget {
                     ),
                     const Expanded(
                       flex: 4,
-                      child: Text(
-                        'Occupation',
+                      child: Text('Occupation',
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
@@ -183,8 +161,95 @@ class PageTwo extends StatelessWidget {
                     ),
                     Expanded(
                       flex: 9,
-                      child: Text(
-                        ':  ${items.occupation}',
+                      child: Text(':  ${info.occupation}',
+                        style: const TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+            ),
+            const Divider(
+              height: 20,
+              thickness: 1,
+              indent: 20,
+              endIndent: 20,
+              color: Color(0xff3a506b),
+            ),
+            ListTile(
+                tileColor: const Color(0xFF1C2541),
+                iconColor: Colors.white,
+                textColor: Colors.white,
+                title: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Expanded(
+                      flex: 1,
+                      child: Text("",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    const Expanded(
+                      flex: 4,
+                      child: Text('Birthday',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 9,
+                      child: Text(':  ${info.birthday}',
+                        style: const TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+            ),
+            const Divider(
+              height: 20,
+              thickness: 1,
+              indent: 20,
+              endIndent: 20,
+              color: Color(0xff3a506b),
+            ),
+            ListTile(
+                tileColor: const Color(0xFF1C2541),
+                iconColor: Colors.white,
+                textColor: Colors.white,
+                title: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Expanded(
+                      flex: 1,
+                      child: Text("",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    const Expanded(
+                      flex: 4,
+                      child: Text('Age',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 9,
+                      child: Text(':  ${info.age}',
                         style: const TextStyle(
                           fontSize: 15,
                         ),
@@ -201,116 +266,11 @@ class PageTwo extends StatelessWidget {
               thickness: 1,
               indent: 20,
               endIndent: 20,
-              color: const Color(0xff3a506b),
+              color: Color(0xff3a506b),
             ),
-            ListTile(
-              // shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(30)
-              // ),
-                tileColor: const Color(0xFF1C2541),
-                iconColor: Colors.white,
-                textColor: Colors.white,
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Expanded(
-                      flex: 1,
-                      child: Text(
-                        "",
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    const Expanded(
-                      flex: 4,
-                      child: Text(
-                        'Birthday',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      flex: 9,
-                      child: Text(
-                        ':  ${items.birthday}',
-                        style: const TextStyle(
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ],
-                )
-            ),
-            // const SizedBox(
-            //   height: 10,
-            // ),
-            const Divider(
-              height: 20,
-              thickness: 1,
-              indent: 20,
-              endIndent: 20,
-              color: const Color(0xff3a506b),
-            ),
-            ListTile(
-              // shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(30)
-              // ),
-                tileColor: const Color(0xFF1C2541),
-                iconColor: Colors.white,
-                textColor: Colors.white,
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Expanded(
-                      flex: 1,
-                      child: Text(
-                        "",
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    const Expanded(
-                      flex: 4,
-                      child: Text(
-                        'Age',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      flex: 9,
-                      child: Text(
-                        ':  ${items.age}',
-                        style: const TextStyle(
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ],
-                )
-            ),
-            // const SizedBox(
-            //   height: 10,
-            // ),
-            const Divider(
-              height: 20,
-              thickness: 1,
-              indent: 20,
-              endIndent: 20,
-              color: const Color(0xff3a506b),
-            ),
-        ],
+          ],
         ),
+      backgroundColor: const Color(0xFF1C2541),
     );
   }
 }
