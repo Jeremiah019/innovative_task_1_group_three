@@ -327,7 +327,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                  backgroundImage: AssetImage('assets/james.png'),
                )
            ),
-           leadingWidth: 65,
+           leadingWidth: 60,
            title: Row(
              children: const [
                Expanded(
