@@ -22,14 +22,28 @@ class UserListItem extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-            ListTile(
+        Theme(
+            data: ThemeData(
+              splashColor: const Color(0xff6fffe9),
+              highlightColor: const Color(0xFF2C776A).withOpacity(.5),
+            ),
+          child: ListTile(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)
+              ),
               tileColor: const Color(0xFF3a506b),
               iconColor: Colors.white,
               textColor: Colors.white,
               leading: CircleAvatar(backgroundImage: AssetImage(item.icon)),
-              title: Text(item.name ?? 'Not a member'),
+              title: Text(item.name ?? 'Not a member',
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold
+                  ),
+              ),
               subtitle: Text(item.relationship ?? ''),
-              trailing: const Icon(Icons.navigate_next),
+              trailing: const Icon(Icons.navigate_next,
+                  size: 30,
+              ),
               onTap: () {
                 Navigator.push(
                   context, MaterialPageRoute(
