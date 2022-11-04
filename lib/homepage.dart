@@ -331,16 +331,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                Expanded(
                    child: ListTile(
                      contentPadding: EdgeInsets.zero,
-                       title: Text(
-                         'Innovative Task #',
+                       title: Text('Innovative Task #',
                          style: TextStyle(
                              fontSize: 20,
                              fontWeight: FontWeight.bold,
                              color: Colors.white
                          ),
                        ),
-                       subtitle: Text(
-                         'Group 3',
+                       subtitle: Text('Group 3',
                          style: TextStyle(
                              fontSize: 15,
                              color: Colors.white
