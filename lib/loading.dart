@@ -2,14 +2,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:innovative_task_1_group_three/homepage.dart';
 
-class LoadingIcon extends StatefulWidget {
-  const LoadingIcon({Key? key}) : super(key: key);
+class LoadingPage extends StatefulWidget {
+  const LoadingPage({Key? key}) : super(key: key);
 
   @override
-  State<LoadingIcon> createState() => _LoadingIconState();
+  State<LoadingPage> createState() => _LoadingPageState();
 }
 
-class _LoadingIconState extends State<LoadingIcon> {
+class _LoadingPageState extends State<LoadingPage> {
 
   @override
   void initState(){
