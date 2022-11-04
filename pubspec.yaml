@@ -91,14 +91,14 @@ flutter:
     - assets/gemma.jpg
     - assets/rg_dom.jpg
     - assets/rg_chris.jpg
-    - assets/Tantoy.jpg
-    - assets/Tantoy_f.jpg
-    - assets/Tantoy_m.jpg
-    - assets/Tantoy_S.jpg
-    - assets/Annabel.jpg
+    - assets/tantoy.jpg
+    - assets/tantoy_f.jpg
+    - assets/tantoy_m.jpg
+    - assets/tantoy_s.jpg
+    - assets/annabel.jpg
     - assets/gwyn.jpg
-    - assets/Jesse.jpg
-    - assets/Ulysses.jpg
+    - assets/jesse.jpg
+    - assets/ulysses.jpg
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

@@ -234,40 +234,39 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     ),
   ];
   List james = [
-      User(
-        name: 'Ralph D. Tantoy',
-        relationship: 'Father',
-        age: 42,
-        birthday: 'July 1, 1981',
-        occupation: 'Security Guard',
-        icon: 'assets/Tantoy_f.jpg'
-      ),
-      User(
-          name: 'Haide A. Tantoy',
-          relationship: 'Mother',
-          age: 41,
-          birthday: 'December 9, 1981',
-          occupation: 'Housewife',
-          icon: 'assets/Tantoy_m.jpg'
-      ),
-      User(
-          name: 'James Ryan A. Tantoy',
-          relationship: 'Older Brother',
-          age: 21,
-          birthday: 'August 23, 2001',
-          occupation: 'Student',
-          icon: 'assets/Tantoy.jpg'
-      ),
-      User(
-          name: 'Ayiah Amber A. Tantoy',
-          relationship: 'Yougest Sister',
-          age: 4,
-          birthday: 'September 12, 2018',
-          occupation: 'Student',
-          icon: 'assets/Tantoy_S.jpg'
-      ),
+    User(
+      name: 'Ralph D. Tantoy',
+      relationship: 'Father',
+      age: 42,
+      birthday: 'July 1, 1981',
+      occupation: 'Security Guard',
+      icon: 'assets/tantoy_f.jpg'
+    ),
+    User(
+      name: 'Haide A. Tantoy',
+      relationship: 'Mother',
+      age: 41,
+      birthday: 'December 9, 1981',
+      occupation: 'Housewife',
+      icon: 'assets/tantoy_m.jpg'
+    ),
+    User(
+      name: 'James Ryan A. Tantoy',
+      relationship: 'Older Brother',
+      age: 21,
+      birthday: 'August 23, 2001',
+      occupation: 'Student',
+      icon: 'assets/tantoy.jpg'
+    ),
+    User(
+      name: 'Ayiah Amber A. Tantoy',
+      relationship: 'Yougest Sister',
+      age: 4,
+      birthday: 'September 12, 2018',
+      occupation: 'Student',
+      icon: 'assets/tantoy_s.jpg'
+    ),
   ];
-
   List jesse = [
     User(
       name: 'Jesse james A. Justalero',
@@ -275,28 +274,31 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       age: 20,
       birthday: 'December 17,2001',
       occupation: 'Student Programmer',
-      icon: 'assets/Jesse.png',
+      icon: 'assets/jesse.jpg',
     ),
-    User(name: 'Gwyneth Rose A. Justalero',
+    User(
+      name: 'Gwyneth Rose A. Justalero',
       relationship: 'Younger Sister',
       age: 17,
       birthday: 'August 18,2006',
       occupation: 'Student',
-      icon: 'assets/gwyn.png',
+      icon: 'assets/gwyn.jpg',
     ),
-    User(name: 'Ulysses B. Justalero',
+    User(
+      name: 'Ulysses B. Justalero',
       relationship: 'Father',
       age: 57,
       birthday: 'January 14, 1965',
       occupation: 'Unemployed',
-      icon: 'assets/Ulysses.png',
+      icon: 'assets/ulysses.jpg',
     ),
-    User(name: 'Annabel A. Justalero',
+    User(
+      name: 'Annabel A. Justalero',
       relationship: 'Mother',
       age: 40,
       birthday: 'January 1, 2002',
       occupation: 'Teacher',
-      icon: 'assets/Annabel.png',
+      icon: 'assets/annabel.jpg',
     ),
   ];
 
@@ -367,39 +369,25 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           unselectedLabelColor: const Color(0xFF3a506b),
             tabs: const [
               Tab(
-                  child: Text(
-                    'Princess Mae Salazar',
-                  )
+                  child: Text('Princess Mae Salazar')
               ),
               Tab(
-                  child: Text(
-                    'Jeremiah Larry King Ungsod',
-                  )
+                  child: Text('Jeremiah Larry King Ungsod')
               ),
               Tab(
-                  child: Text(
-                    'Angelica Zerl Lazarito',
-                  )
+                  child: Text('Angelica Zerl Lazarito')
               ),
               Tab(
-                  child: Text(
-                    'Joshua Cabugnason',
-                  )
+                  child: Text('Joshua Cabugnason')
               ),
               Tab(
-                  child: Text(
-                    'RG Christian Cagampang',
-                  )
+                  child: Text('RG Christian Cagampang')
               ),
               Tab(
-                  child: Text(
-                    'James Ryan A. Tantoy',
-                  )
+                  child: Text('James Ryan A. Tantoy')
               ),
               Tab(
-                  child: Text(
-                    'Jesse James A. Justalero',
-                  )
+                  child: Text('Jesse James A. Justalero')
               ),
             ],
           ),
